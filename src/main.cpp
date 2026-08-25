@@ -19,6 +19,7 @@ void cpu_gemm(const float* A, const float* B, float* C, int M, int N, int K) {
             C[i*N + j] = sum;
         }
     }
+    
 }
 
 bool verify_result(const float* host_C, const float* device_C, int size) {
